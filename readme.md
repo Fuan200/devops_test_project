@@ -38,15 +38,34 @@ git clone git@github.com:Fuan200/devops_test_project.git
 cd devops_test_project
 ```
 
-3. Run:
+3. Change permisions:
 
 ``` bash
-docker-compose up
+chmod +x start.sh
 ```
 
-4. You can open a browser and navigate to `http://devops.test` to home page to Laravel.
+4. To run the services without the random HTTP:
 
+``` bash
+./start.sh
+```
 
+5. You can open a browser and navigate to `http://devops.test` to home page to Laravel, the route `http://devops.test/thiio` will not work.
+
+6. To run the services with the random HTTP:
+
+``` bash
+./start.sh --profile random
+```
+
+7. You can open a browser and navigate to `http://devops.test` to home page to Laravel, the route `http://devops.test/thiio` will work.
+
+8. To down the project
+
+``` bash
+chmod +x down.sh
+./down.sh
+```
 
 ## Author
 
