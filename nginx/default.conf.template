@@ -16,6 +16,10 @@ server {
         include fastcgi_params;
     }
 
+    location /thiio {
+        proxy_pass http://random_http:8080;
+    }
+
     if ($host != "devops.test") {
         return 301 http://devops.test$request_uri;
     }

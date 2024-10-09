@@ -29,7 +29,7 @@ Add the following line at the of the file:
 1. Clone this repository:
 
 ``` bash
-git clone 
+git clone git@github.com:Fuan200/devops_test_project.git
 ```
 
 2. Change to the project directory
@@ -38,7 +38,15 @@ git clone
 cd devops_test_project
 ```
 
-3. 
+3. Run:
+
+``` bash
+docker-compose up
+```
+
+4. You can open a browser and navigate to `http://devops.test` to home page to Laravel.
+
+
 
 ## Author
 

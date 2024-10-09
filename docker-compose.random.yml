@@ -28,7 +28,7 @@ services:
     depends_on:
       - laravel
     environment:
-      DOCKER_PROFILE: ${DOCKER_PROFILE:-default}
+      DOCKER_PROFILE: ${DOCKER_PROFILE:-random}
       #DOCKER_PROFILE: ${DOCKER_PROFILE:-default} 
 
   mysql:
@@ -50,8 +50,6 @@ services:
       - uwu_network
     ports:
       - "8080:8080"
-    profiles:
-      - random
 
 networks:
   uwu_network:
